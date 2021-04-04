@@ -1,6 +1,5 @@
 body{
   margin: 0;
-  background-color: aqua;
 }
 
 .logo-groote{
@@ -10,4 +9,11 @@ body{
 
 .logo{
   text-align: center;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
 }
