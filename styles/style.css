@@ -23,6 +23,8 @@ body{
 
 .hoofdkopje{
   padding-top: 15px;
+  color: white;
+  font-family: Roboto;
 }
 
 .grid-item-1{
@@ -46,7 +48,7 @@ body{
   margin-right: auto;
   background-color: #336699;
   width: 700px;
-  height: 400px;
+  height: 250px;
   font-size: 18px;
 }
 
@@ -68,4 +70,12 @@ body{
 
 #citybutton{
   visibility: hidden;
+}
+
+#weersverwachting{
+  color: white;
+  background-color: #336699;
+  font-size: 25px;
+  font-family: Roboto;
+  padding-bottom: 15px;
 }
