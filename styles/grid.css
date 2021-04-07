@@ -58,7 +58,7 @@
 
 /* iPad */
 
-/* @media only screen and (min-width: 750px){
+@media only screen and (min-width: 750px){
  .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -71,4 +71,38 @@
     "grid-item-5 grid-item-6"
     "grid-item-7 grid-item-8"
 
-} */
+}
+
+/* Kleine desktop */
+
+@media only screen and (min-width: 1280px){
+ .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas:
+    "logo logo"
+    "hoofd-titel hoofd-titel"
+    "grid-item-1 grid-item-2"
+    "grid-item-3 grid-item-4"
+    "grid-item-5 grid-item-6"
+    "grid-item-7 grid-item-8"
+
+}
+
+/* grote desktop */
+
+@media only screen and (min-width: 1460px){
+ .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas:
+    "logo logo"
+    "hoofd-titel hoofd-titel"
+    "grid-item-1 grid-item-2"
+    "grid-item-3 grid-item-4"
+    "grid-item-5 grid-item-6"
+    "grid-item-7 grid-item-8"
+
+}

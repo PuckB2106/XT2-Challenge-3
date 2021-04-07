@@ -32,6 +32,10 @@ body{
   background-color: #1F2833;
 }
 
+#geocoder{
+  padding-left: 10%;
+}
+
 .grid-item-2{
   margin-left: auto;
   margin-right: auto;
@@ -56,14 +60,6 @@ body{
 }
 
 .grid-item-4{
-  margin-top: 10%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #336699;
-  border-radius: 10px;
-  width: 700px;
-  height: 250px;
-  font-size: 18px;
 }
 
 #map {
