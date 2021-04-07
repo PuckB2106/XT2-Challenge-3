@@ -36,34 +36,34 @@ geocoder.on('result', function (e) {
     });
 
     features = [];
-    getBars(coords);
+    getCafes(coords);
     // getCultural(coords);
 });
 
 //andere api  parameter coords
-function getBars(coords) {
+function getCafes(coords) {
     const openTripMapKey = '5ae2e3f221c38a28845f05b6a22cdc4a0cfb0a132d606ec9a0834be3';
     let url = 'https://api.opentripmap.com/0.1/en/places/radius',
-        qString = '?radius=1500&lon=' + coords[0] + '&lat=' + coords[1] + '&kinds=bars&limit=25&apikey=' + openTripMapKey;
+        qString = '?radius=1500&lon=' + coords[0] + '&lat=' + coords[1] + '&kinds=cafes&limit=25&apikey=' + openTripMapKey;
 
     fetch(url + qString)
         .then(resp => {
             return resp.json();
         }).then(data => {
-        let bars = data.features;
+        let cafes = data.features;
 
-        for (let i = 0; i < bars.length; i++) {
-            let bar = bars[i];
+        for (let i = 0; i < cafes.length; i++) {
+            let cafe = cafes[i];
 
             let obj = {};
-            obj.id = bar.id;
+            obj.id = cafe.id;
             obj.type = 'Feature';
             obj.properties = {};
-            obj.properties.description = '<strong>' + bar.properties.name + '</strong>';
-            obj.properties.icon = 'bar';
+            obj.properties.description = '<strong>' + cafe.properties.name + '</strong>';
+            obj.properties.icon = 'cafe';
             obj.geometry = {};
             obj.geometry.type = 'Point';
-            obj.geometry.coordinates = bar.geometry.coordinates;
+            obj.geometry.coordinates = cafe.geometry.coordinates;
 
             features.push(obj);
         }
