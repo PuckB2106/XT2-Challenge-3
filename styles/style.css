@@ -21,10 +21,14 @@ body{
   font-family: Roboto;
   font-size: 50px;
   color: white;
+  margin-left: 10%;
+  margin-right: 0;
 }
 
 .hoofdkopje{
-  padding-top: 15px;
+  padding: 15px;
+  padding-bottom: 0;
+  margin: 0;
   color: white;
   font-family: Roboto;
 }
@@ -34,7 +38,7 @@ body{
 }
 
 #geocoder{
-  padding-left: 5%;
+  padding-left: 10%;
 }
 
 .grid-item-2{
@@ -42,11 +46,12 @@ body{
   margin-right: auto;
   background-color: #336699;
   border-radius: 10px;
-  width: 700px;
-  height: 250px;
+  width: 800px;
+  height: 200px;
   color: white;
   font-family: Roboto;
   font-size: 20px;
+  margin-right: 8%;
 }
 
 .grid-item-3{
@@ -55,8 +60,8 @@ body{
   margin-right: auto;
   background-color: #336699;
   border-radius: 10px;
-  width: 700px;
-  height: 250px;
+  width: 800px;
+  height: 200px;
   font-size: 18px;
 }
 
@@ -66,9 +71,10 @@ body{
   margin-right: auto;
   background-color: #336699;
   border-radius: 10px;
-  width: 700px;
-  height: 250px;
+  width: 800px;
+  height: 200px;
   font-size: 18px;
+  margin-bottom: 10%;
 
 }
 
@@ -78,8 +84,8 @@ body{
 }
 
 #map {
-  height: 60vh;
-  width: 90vw;
+  height: 400px;
+  width: 800px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 8%;
@@ -91,6 +97,7 @@ body{
   background-color: #336699;
   font-size: 50px;
   padding-bottom: 15px;
+  padding: 20px;
 }
 
 #citybutton{
@@ -102,5 +109,25 @@ body{
   background-color: #336699;
   font-size: 25px;
   font-family: Roboto;
-  padding-bottom: 15px;
+  padding: 15px;
+}
+
+#nieuws{
+  padding: 20px;
+}
+
+.tekst-2{
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-family: Roboto;
+  margin-bottom: 10%;
+}
+
+.alien{
+  width: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
 }

@@ -240,9 +240,6 @@ function placeMarkers() {
                 weatherBox2.innerHTML = (response.weather[0].description) + '<br>' + '' + 'Windspeed: ' + response.wind.speed + ' m/s ' + '<br>' + '' + ' Winddirection: ' + response.wind.deg + ' ' + '&#176' + '<br>' + '' + 'Atmosphere pressure: ' + response.main.pressure + ' ' + 'kPa';
                  // + '' + (response.weather[0].description);
             		// weatherBox.innerHTML = degC + '&#176;C <br>';
-
-                var weatherBox3 = document.getElementById('Landmogelijkheid');
-                weatherBox3.innerHTML = (response.weather[0].description);
             	});
             }
 

@@ -8,9 +8,11 @@
   "grid-item-1"
   "grid-item-2"
   "grid-item-3"
-  "grid-item-4";
+  "grid-item-4"
+  "extra-tekst";
 
 }
+
 
 .logo{
   grid-area: logo;
@@ -36,47 +38,118 @@
   grid-area: grid-item-4;
 }
 
+.extra-tekst{
+  grid-area: extra-tekst;
+}
+
+
+
 /* iPad */
 
 @media only screen and (min-width: 750px){
- .container {
+ .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
     grid-template-areas:
     "logo logo"
     "hoofd-titel hoofd-titel"
-    "grid-item-1 grid-item-2"
-    "grid-item-3 grid-item-4"
+    "grid-item-1 grid-item-1"
+    "grid-item-2 grid-item-3"
+    "grid-item-4 grid-item-4"
+    "extra-tekst extra-tekst"
+}
+
+
+.tekst{
+  margin-left: 5%;
+}
+
+#map{
+  width: 900px;
+}
+
+#geocoder{
+  margin-left: -5%;
+}
+
+.grid-item-2{
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 250px;
+}
+
+.grid-item-3{
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 250px;
+}
+
+.grid-item-4{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 1000px;
+  height: 250px;
+}
 
 }
+
 
 /* Kleine desktop */
 
 @media only screen and (min-width: 1280px){
- .container {
+ .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
     grid-template-areas:
     "logo logo logo"
     "hoofd-titel hoofd-titel hoofd-titel"
-    "grid-item-1 grid-item-2 grid-item-3"
-    "grid-item-4 grid-item-4 grid-item-4"
+    "grid-item-1 grid-item-1 grid-item-1"
+    "grid-item-2 grid-item-3 grid-item-4"
+    "extra-tekst extra-tekst extra-tekst"
+}
 
+.grid-item-2{
+  margin: 0;
+  width: 500px;
+  height: 250px;
+}
+
+.grid-item-3{
+  margin: 0;
+  width: 500px;
+  height: 250px;
+}
+
+.grid-item-4{
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 250px;
+}
 }
 
 /* grote desktop */
 
-/* @media only screen and (min-width: 1460px){
- .container {
+@media only screen and (min-width: 1460px){
+ .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 
     grid-template-areas:
-    "logo logo"
-    "hoofd-titel hoofd-titel"
-    "grid-item-1 grid-item-2"
-    "grid-item-3 grid-item-4"
+    "logo logo logo logo"
+    "hoofd-titel hoofd-titel hoofd-titel hoofd-titel"
+    "grid-item-1 grid-item-1 grid-item-1 grid-item-1"
+    "grid-item-2 grid-item-2 grid-item-3 grid-item-3"
+    "grid-item-4 grid-item-4 grid-item-4 grid-item-4"
+    "grid-item-4 grid-item-4 grid-item-4 grid-item-4"
+    "extra-tekst extra-tekst extra-tekst extra-tekst"
 
-} */
+}
+}
