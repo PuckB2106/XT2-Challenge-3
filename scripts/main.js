@@ -4,7 +4,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoicHVja2IiLCJhIjoiY2ttbHR0MmNnMDE3eTJucGdzemRmd
 // Initialate map
 var map = new mapboxgl.Map({
 container: 'map',
-style: 'mapbox://styles/mapbox/streets-v11',
+style: 'mapbox://styles/mapbox/satellite-v9',
 center: [4.322840, 52.067101],
 zoom: 11.15
 });
@@ -53,7 +53,7 @@ document.getElementById('citybutton').onclick = function(){
             	// get current weather
             	fetch(request)
 
-            	// parse response to JSON format . daarna gebeurt dit,
+            	// parse response to JSON format
             	.then(function(response) {
             		return response.json();
             	})
@@ -67,38 +67,11 @@ document.getElementById('citybutton').onclick = function(){
             		weatherBox.innerHTML = (response.main.temp - 273.15).toFixed(1) + ' &#176;C </br>';
 
                 var weatherBox2 = document.getElementById('weersverwachting');
-                weatherBox2.innerHTML = (response.weather[0].description) + '<br>' + '' + 'Windspeed: ' + response.wind.speed + ' ms ' + '<br>' + '' + ' Windrichting: ' + response.wind.deg + '<br>' + '' + 'Atmosfeer druk: ' + response.main.pressure;
+                weatherBox2.innerHTML = (response.weather[0].description) + '<br>' + '' + 'Windspeed: ' + response.wind.speed + ' m/s ' + '<br>' + '' + ' Winddirection: ' + response.wind.deg + ' ' + '&#176' + '<br>' + '' + 'Atmosphere pressure: ' + response.main.pressure + ' ' + 'kPa';
                  // + '' + (response.weather[0].description);
             		// weatherBox.innerHTML = degC + '&#176;C <br>';
+
+                var weatherBox3 = document.getElementById('Landmogelijkheid');
+                weatherBox3.innerHTML = (response.weather[0].description);
             	});
             }
-
-
-
-//             506f6c3f3c
-//
-//             function getData() {
-//
-// 	             var city = document.getElementById('city').value;
-// 	              var request = 'https://weerlive.nl/api/json-data-10min.php?key=506f6c3f3c&locatie=' + city;
-//
-// 	               fetch(request)
-//
-// 	                .then(function(response) {
-// 		                  return response.json();
-// 	                   })
-//
-// 	.then(function(response) {
-// 		console.log(response);
-//
-// 		var degree = document.getElementById('degree');
-// 		degree.innerHTML = response.liveweer[0].temp + ' &#730;C ';
-//
-// 		var weather = document.getElementById('weather');
-// 		weather.innerHTML = response.liveweer[0].verw;
-//
-// 		loadMap(response);
-// 	});
-// }
-
-pkp2GEFRGqwFKJ7vsS8B2mwc6sJKNhyW1xJwCxcB Nasa api key
