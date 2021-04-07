@@ -8,11 +8,7 @@
   "grid-item-1"
   "grid-item-2"
   "grid-item-3"
-  "grid-item-4"
-  "grid-item-5"
-  "grid-item-6"
-  "grid-item-7"
-  "grid-item-8";
+  "grid-item-4";
 
 }
 
@@ -40,22 +36,6 @@
   grid-area: grid-item-4;
 }
 
-.grid-item-5{
-  grid-area: grid-item-5;
-}
-
-.grid-item-6{
-  grid-area: grid-item-6;
-}
-
-.grid-item-7{
-  grid-area: grid-item-7;
-}
-
-.grid-item-8{
-  grid-area: grid-item-8;
-}
-
 /* iPad */
 
 @media only screen and (min-width: 750px){
@@ -68,8 +48,6 @@
     "hoofd-titel hoofd-titel"
     "grid-item-1 grid-item-2"
     "grid-item-3 grid-item-4"
-    "grid-item-5 grid-item-6"
-    "grid-item-7 grid-item-8"
 
 }
 
@@ -78,21 +56,19 @@
 @media only screen and (min-width: 1280px){
  .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 
     grid-template-areas:
-    "logo logo"
-    "hoofd-titel hoofd-titel"
-    "grid-item-1 grid-item-2"
-    "grid-item-3 grid-item-4"
-    "grid-item-5 grid-item-6"
-    "grid-item-7 grid-item-8"
+    "logo logo logo"
+    "hoofd-titel hoofd-titel hoofd-titel"
+    "grid-item-1 grid-item-2 grid-item-3"
+    "grid-item-4 grid-item-4 grid-item-4"
 
 }
 
 /* grote desktop */
 
-@media only screen and (min-width: 1460px){
+/* @media only screen and (min-width: 1460px){
  .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -102,7 +78,5 @@
     "hoofd-titel hoofd-titel"
     "grid-item-1 grid-item-2"
     "grid-item-3 grid-item-4"
-    "grid-item-5 grid-item-6"
-    "grid-item-7 grid-item-8"
 
-}
+} */
